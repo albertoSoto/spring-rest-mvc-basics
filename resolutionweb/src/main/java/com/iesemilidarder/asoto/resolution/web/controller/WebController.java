@@ -27,4 +27,9 @@ public class WebController {
         //session.getServletContext().getip
         return "index";
     }
+    @RequestMapping("/macros")
+    public String macroTest(HttpSession session, Model model) {
+        return "macroTest";
+    }
+
 }
